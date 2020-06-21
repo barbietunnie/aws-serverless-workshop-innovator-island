@@ -4,6 +4,8 @@
 
 The theme park uses a proprietary system called the **Flow & Traffic Controller** to estimate wait times for rides. To help ease congestion, you will publish ride times directly into the application so guests can plan their day. 
 
+:video_camera: This module is also available to [watch on YouTube](https://www.youtube.com/watch?v=DlaR1EzeXnA).
+
 ## How it works
 
 * The Controller publishes updates every minute to an Amazon SNS topic. This has already been created for you.
@@ -49,7 +51,7 @@ s3_deploy_bucket="theme-park-sam-deploys-${accountId}"
 
 ![Module 2 - Create Function](../images/2-realtime-lambda1.png)
 
-3. Expand the *Designer* section. Select **+ Add trigger**. In the *Trigger configuration* dropdown, choose **SNS**. In the SNS topic selector, select the SNS topic starting with `ride-times`: 
+3. Expand the *Designer* section. Select **+ Add trigger**. In the *Trigger configuration* dropdown, choose **SNS**. In the SNS topic selector, select the SNS topic starting with `theme-park-ride-times`: 
 
 ![Module 2 - SNS](../images/2-realtime-lambda2b.png)
 
